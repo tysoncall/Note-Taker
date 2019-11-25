@@ -1,3 +1,4 @@
+console.log("javascript loaded")
 var $noteTitle = $(".note-title");
 var $noteText = $(".note-textarea");
 var $saveNoteBtn = $(".save-note");
@@ -56,8 +57,9 @@ var handleNoteSave = function() {
     title: $noteTitle.val(),
     text: $noteText.val()
   };
-
-  saveNote(newNote).then(function(data) {
+ 
+  saveNote(newNote).then(function(newNote) {
+    console.log("newNote:", newNote)
     getAndRenderNotes();
     renderActiveNote();
   });
