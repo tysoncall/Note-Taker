@@ -20,35 +20,6 @@ app.use(express.static('public'));
 app.use("/api", apiRoutes)
 app.use("/", htmlRoutes)
 
-// HTML Routes
-
-// app.get("/", function(req, res) {
-//   res.sendFile(path.join(__dirname, "index.html"));
-// });
-
-
-// app.get("/notes", function(req, res) {
-//   res.sendFile(path.join(__dirname, "notes.html"));
-// });
-
-//API Routes
-
-// fs.readFile('db.json', 'utf8', function(err, data) {
-//   console.log(data);
-// })
-// function handleRequest(req, res) {
-
-//   // Here we use the fs package to read our db.json file
-//   fs.readFile(__dirname + "db.json", function(err, data) {
-//     if (err) throw err;
-    
-//     res.writeHead(200, { "Content-Type": "text/html" });
-//     res.end(data);
-//   });
-// }
-
-// how do I store and retrieve notes using fs??////////
-// how do I use POST method properly??/////////
 
 
 app.listen(PORT, function() {
