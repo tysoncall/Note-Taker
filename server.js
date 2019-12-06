@@ -9,7 +9,7 @@ var apiRoutes = require("./routes/apiRoutes")
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = 2006;
+var PORT = process.env.PORT || 2006;
 
 
 // Sets up the Express app to handle data parsing
